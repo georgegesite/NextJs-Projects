@@ -1,7 +1,7 @@
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import { Navbar } from "@/components/navbar";
 
-export default function ProtectedLayout({
+export default function HomeLayout({
   children,
 }: {
   children: React.ReactNode;
