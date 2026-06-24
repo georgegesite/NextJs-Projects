@@ -3,7 +3,6 @@ import { AuthButton } from "@/components/auth-button";
 import { hasEnvVars } from "@/lib/utils";
 import Link from "next/link";
 import { Suspense } from "react";
-import MobileMenuToggle from "@/components/mobile-menu-toggle";
 
 export function Navbar() {
   return (
@@ -30,26 +29,6 @@ export function Navbar() {
                 </Suspense>
               )}
             </div>
-
-            <MobileMenuToggle targetId="mobile-menu" />
-          </div>
-        </div>
-
-        <div id="mobile-menu" className="md:hidden hidden border-t border-t-foreground/10 bg-background">
-          <div className="flex flex-col p-4 gap-3">
-            <Link href="/pace-generator" className="text-sm font-medium text-muted-foreground hover:text-foreground">
-              Pace Generator
-            </Link>
-            <Link href="/hr-zone-generator" className="text-sm font-medium text-muted-foreground hover:text-foreground">
-              HR Zone Generator
-            </Link>
-            {!hasEnvVars ? (
-              <EnvVarWarning />
-            ) : (
-              <Suspense>
-                <AuthButton />
-              </Suspense>
-            )}
           </div>
         </div>
       </div>

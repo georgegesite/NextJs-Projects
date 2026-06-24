@@ -5,7 +5,7 @@ export function Hero() {
     <div className="flex flex-col gap-10 items-center text-center">
       <div className="max-w-3xl">
         <p className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight !leading-tight">
-          Train smarter. Race faster — no account required.
+          Train smarter. Race faster.
         </p>
         <p className="mt-6 text-lg sm:text-xl text-slate-500 dark:text-slate-400">
           Get instant, science-backed pace zones from any recent race result and
